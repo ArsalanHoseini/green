@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+		
+        <title>اودکس - قالب فروشگاهی HTML</title>
+		 
+        <!-- Custom CSS -->
+        <link href="assets/css/styles.css" rel="stylesheet">
+		
+    </head>
+	
+    <body class="grocery-theme light error-page">
+	
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+		
+		
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+		
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- Start Navigation -->
+			<div class="header">
+			
+				<div class="header_topbar light">
+					<div class="container">
+						<div class="row">
+						
+							<div class="col-lg-6 col-md-6 col-sm-6 col-4">
+								<ul class="tp-list nbr mr-2">
+									<li class="dropdown dropdown-currency hidden-xs hidden-sm">
+										<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">فارسی<i class="mr-1 fa fa-angle-down"></i></a>
+										<ul class="dropdown-menu mlix-wrap">
+											<li><a href="javascript:void(0);">فارسی</a></li>
+											<li><a href="javascript:void(0);">انگلیسی</a></li>
+											<li><a href="javascript:void(0);">فرانسوی</a></li>
+											<li><a href="javascript:void(0);">ایتالیای</a></li>
+										</ul>
+									</li>
+									<li class="dropdown dropdown-currency hidden-xs hidden-sm">
+										<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">تومان<i class="mr-1 fa fa-angle-down"></i></a>
+										<ul class="dropdown-menu mlix-wrap">
+											<li><a href="javascript:void(0);">تومان</a></li>
+											<li><a href="javascript:void(0);">دلار</a></li>
+											<li><a href="javascript:void(0);">یورو</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-8">
+								<div class="topbar_menu">
+									<ul>
+										<li><a href="order.html"><i class="ti-bag"></i>حساب کاربری</a></li>
+										<li><a href="order-tracking.html"><i class="ti-location-pin"></i>پیگیری سفارش</a></li>
+										<li class="hide-m"><a href="wishlist.html"><i class="ti-heart"></i>مورد علاقه</a></li>
+									</ul>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+				
+				<!-- Main header -->
+				<div class="main_header">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-2 col-md-2 col-sm-3 col-4">
+								<a class="nav-brand" href="#">
+									<img src="assets/img/grocery-logo.png" class="logo" alt="" />
+								</a>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-8">
+								<!-- Show on Mobile & iPad -->
+								<div class="blocks shop_cart d-xl-none d-lg-none">
+									<div class="single_shop_cart">
+										<div class="ss_cart_left">
+											<a class="cart_box" data-toggle="collapse" href="#mySearch" role="button" aria-expanded="false" aria-controls="mySearch"><i class="ti-search"></i></a>
+										</div>
+									</div>
+									<div class="single_shop_cart">
+										<div class="ss_cart_left">
+											<a href="#"  onclick="openRightMenu()" class="cart_box"><span class="qut_counter">0</span><i class="ti-shopping-cart"></i></a>
+										</div>
+										<div class="ss_cart_content">
+											<strong>سبد خرید من</strong>
+											<span>100 تومان</span>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Show on Desktop -->
+								<div class="blocks shop_cart d-none d-xl-block d-lg-block">
+									<div class="single_shop_cart">
+										<div class="ss_cart_left">
+											<a href="javascript:void(0)" class="cart_box"><i class="lni lni-phone"></i></a>
+										</div>
+										<div class="ss_cart_content">
+											<strong>شماره تماس:</strong>
+											<span>02185560684</span>
+										</div>
+									</div>
+									<div class="single_shop_cart">
+										<div class="ss_cart_left">
+											<a href="#" onclick="openRightMenu()" class="cart_box"><span class="qut_counter">0</span><i class="ti-shopping-cart"></i></a>
+										</div>
+										<div class="ss_cart_content">
+											<strong>سبد خرید من</strong>
+											<span>100 تومان</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="blocks search_blocks d-none d-xl-block d-lg-block">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="جستجو در فروشگاه ...">
+										<div class="input-group-append">
+										<button class="btn search_btn" type="button"><i class="ti-search"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collapse" id="mySearch">
+						<div class="blocks search_blocks">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="جستجو در فروشگاه ...">
+								<div class="input-group-append">
+								<button class="btn search_btn" type="button"><i class="ti-search"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="header_nav">
+					<div class="container">	
+						<div class="row align-item-center">
+							<div class="col-lg-3 col-md-4 col-sm-8 col-10">
+								<!-- For Desktop -->
+								<div class="shopby_categories d-none d-xl-block d-lg-block">
+									<a class="shop_category" data-toggle="collapse" href="#myCategories" role="button" aria-expanded="false" aria-controls="myCategories"><i class="ti-menu"></i>خرید بر اساس دسته ها</a>
+									<div class="collapse" id="myCategories">
+										<div id="cats_menu">
+											<ul>
+												<li class="active has-sub"><a href="javascript:void(0);"><span>دسته بندی</span></a>
+													<ul>
+														 <li><a href="grocery.html"><span>مواد غذایی</span></a></li>
+														 <li><a href="organic.html"><span>ارگانیک</span></a></li>
+														 <li><a href="electronics.html"><span>الکترونیکی</span></a></li>
+														 <li><a href="woocommerce.html"><span>مد پوشاک</span></a></li>
+														 <li><a href="digital.html"><span>دیجیتالی</span></a></li>
+														 <li><a href="beauty.html"><span>لوازم آرایشی</span></a></li>
+													</ul>
+													<ul>
+														 <li class="has-sub"><a href="javascript:void(0);"><span>دیجیتالی</span></a>
+															<ul>
+															   <li><a href="detail-1.html"><span>زیر مجموعه</span></a></li>
+															   <li><a href="detail-2.html"><span>زیر مجموعه</span></a></li>
+															   <li><a href="detail-3.html"><span>زیر مجموعه</span></a></li>
+															   <li><a href="detail-4.html"><span>زیر مجموعه</span></a></li>
+															</ul>
+														 </li>
+													</ul>
+											   </li>
+											   <li class="has-sub"><a href="javascript:void(0);"><span>برند</span></a>
+													<ul>
+														 <li><a href="search-list-layout.html"><span>نایک</span></a></li>
+														 <li><a href="search-list-layout.html"><span>اپل</span></a></li>
+														 <li><a href="search-list-layout.html"><span>هکرل</span></a></li>
+														 <li><a href="search-list-layout.html"><span>توفان</span></a></li>
+														 <li><a href="search-list-layout.html"><span>اوریو</span></a></li>
+														 <li><a href="search-list-layout.html"><span>کیتی</span></a></li>
+													</ul>
+											   </li>
+											   <li class="has-sub"><a href="javascript:void(0);"><span>صفحات</span></a>
+													<ul>
+														 <li><a href="about.html"><span>درباره ما</span></a></li>
+														 <li><a href="blog.html"><span>وبلاگ</span></a></li>
+														 <li><a href="blog-detail.html"><span>جزئیات وبلاگ</span></a></li>
+														 <li><a href="add-to-cart.html"><span>افزودن به سبد خرید</span></a></li>
+														 <li><a href="payment-methode.html"><span>پرداخت</span></a></li>
+														 <li><a href="faq.html"><span>سوالات متداول</span></a></li>
+													</ul>
+											   </li>
+											   <li class="has-sub"><a href="javascript:void(0);"><span>محصولات</span></a>
+													<ul>
+														 <li><a href="4-column.html"><span>محصولات 4 ستونه</span></a></li>
+														 <li><a href="5-column.html"><span>محصولات 5 ستونه</span></a></li>
+														 <li><a href="6-column.html"><span>محصولات 6 ستونه</span></a></li>
+														 <li><a href="4-column.html"><span>محصولات 7 ستونه</span></a></li>
+														 <li><a href="4-column.html"><span>محصولات 8 ستونه</span></a></li>
+														 <li><a href="4-column.html"><span>محصولات 9 ستونه</span></a></li>
+													</ul>
+												</li>
+											    <li><a href="4-column.html"><span>امکانات</span></a></li>
+											   <li><a href="contact.html"><span>تماس</span></a></li>
+											   <li class="has-sub"><a href="javascript:void(0);"><span>چیدمان ها</span></a>
+													<ul>
+														 <li><a href="search-list-layout.html"><span>با نوار کناری سمت راست</span></a></li>
+														 <li><a href="search-sidebar.html"><span>با نوار کناری سمت راست</span></a></li>
+														 <li><a href="search-sidebar-2.html"><span>بنر عرض کامل</span></a></li>
+														 <li><a href="search-sidebar-3.html"><span>بنر</span></a></li>
+														 <li><a href="search-sidebar-4.html"><span>جستجو کامل</span></a></li>
+														 <li><a href="search-sidebar-5.html"><span>طرح بندی جعبه ای</span></a></li>
+													</ul>
+											   </li>
+											   <li><a href="javascript:void(0);"><span>خرید اودکس</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<!-- For Mobile -->
+								<div class="shopby_categories d-xl-none d-lg-none">
+									<a class="shop_category" href="javascript:void(0);" onclick="openLeftMenu()"><i class="ti-menu"></i>خرید بر اساس دسته ها</a>
+								</div>
+								
+							</div>
+							
+							<div class="col-lg-9 col-md-8 col-sm-4 col-2">
+								<nav id="navigation" class="navigation navigation-landscape">
+									<div class="nav-header">
+										<div class="nav-toggle"></div>
+									</div>
+									<div class="nav-menus-wrapper" style="transition-property: none;">
+										<ul class="nav-menu">
+										
+											<li class="active"><a href="#">خانه<span class="submenu-indicator"></span></a>
+												<ul class="nav-dropdown nav-submenu">
+													<li><a href="#">مواد غذایی<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="grocery.html">مواد غذایی 1</a></li>
+															<li><a href="grocery-2.html">مواد غذایی 2</a></li>
+															<li><a href="grocery-3.html">مواد غذایی 3</a></li>
+														</ul>
+													</li>
+													<li><a href="#">فروشگاه<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="woocommerce.html">فروشگاه 1</a></li>
+															<li><a href="woocommerce-2.html">فروشگاه 2</a></li>
+															<li><a href="beauty.html">لوازم آرایشی</a></li>
+														</ul>
+													</li>
+													<li><a href="organic.html">ارگانیک</a></li>
+													<li><a href="electronics.html">الکترونیکی</a></li>
+													<li><a href="digital.html">دیجیتالی</a></li>
+													<li><a href="furniture.html">مبلمان</a></li>
+												</ul>
+											</li>
+											
+											<li><a href="#">دسته بندی<span class="submenu-indicator"></span></a>
+												<ul class="nav-dropdown nav-submenu">
+													<li><a href="#">دسته بندی 1<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="search-full-width.html">بنر تمام عرض</a></li>
+															<li><a href="search-list-layout.html">چیدمان لیستی</a></li>
+															<li><a href="4-column.html">محصول 4 ستونی</a></li>
+															<li><a href="5-column.html">محصول 5 ستونی</a></li>
+															<li><a href="6-column.html">محصول 6 ستونی</a></li>
+														</ul>
+													</li>
+													<li><a href="#">دسته بندی 2<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="grocery.html">سبک هدر 1</a></li>
+															<li><a href="grocery-2.html">سبک هدر 2</a></li>
+															<li><a href="grocery-3.html">سبک هدر 3</a></li>
+															<li><a href="#">محصول 7 ستونی</a></li>
+															<li><a href="#">محصول 9 ستونی</a></li>
+															<li><a href="#">محصول 10 ستونی</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											
+											<li><a href="#">محصولات<span class="submenu-indicator"></span></a>
+												<ul class="nav-dropdown nav-submenu">
+													<li><a href="#">محصولات 1<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="search-sidebar.html">با نوار کناری 1</a></li>
+															<li><a href="search-sidebar-2.html">با نوار کناری 2</a></li>
+															<li><a href="search-sidebar-3.html">با نوار کناری 3</a></li>
+															<li><a href="search-sidebar-4.html">با نوار کناری 4</a></li>
+															<li><a href="search-sidebar-5.html">با نوار کناری 5</a></li>
+															<li><a href="search-sidebar-6.html">با نوار کناری 6</a></li>
+															<li><a href="search-sidebar-7.html">با نوار کناری 7</a></li>
+															<li><a href="search-sidebar-8.html">با نوار کناری 8</a></li>
+														</ul>
+													</li>
+													<li><a href="#">محصولات 2<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="detail-1.html">محصول پیش فرض 1</a></li>
+															<li><a href="detail-2.html">محصول پیش فرض 2</a></li>
+															<li><a href="detail-3.html">محصولات گروهی</a></li>
+															<li><a href="detail-4.html">محصول ساده</a></li>
+															<li><a href="detail-5.html">محصولات گروهی</a></li>
+															<li><a href="detail-6.html">محصول دیجیتالی</a></li>
+															<li><a href="vendor.html">جزئیات فروشنده</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											
+											<li><a href="#">صفحات فروشگاه<span class="submenu-indicator"></span></a>
+												<ul class="nav-dropdown nav-submenu">
+													<li><a href="#">داشبورد کاربری<span class="submenu-indicator"></span></a>
+														<ul class="nav-dropdown nav-submenu">
+															<li><a href="order.html">سفارشات من</a></li>
+															<li><a href="order-history.html">تاریخچه سفارشات</a></li>
+															<li><a href="order-tracking.html">رهگیری سفارش</a></li>
+															<li><a href="wishlist.html">محصولات مورد علاقه</a></li>
+															<li><a href="account-info.html">تنظیمات حساب</a></li>
+															<li><a href="payment-methode.html">روش های پرداخت</a></li>
+														</ul>
+													</li>
+													<li><a href="add-to-cart.html">افزودن به سبد خرید</a></li>
+													<li><a href="billing.html">صفحه صورتحساب</a></li>
+													<li><a href="checkout-complete.html">تأیید تسویه حساب</a></li>
+													<li><a href="admin-login.html">ورود ادمین</a></li>
+												</ul>
+											</li>
+											
+											<li><a href="#">صفحات<span class="submenu-indicator"></span></a>
+												<ul class="nav-dropdown nav-submenu">
+													<li><a href="blog.html">صفحه وبلاگ</a></li>
+													<li><a href="blog-detail.html">جزئیات وبلاگ</a></li>
+													<li><a href="about.html">درباره ما</a></li>
+													<li><a href="contact.html">تماس</a></li>
+													<li><a href="login-signup.html">ورود / ثبت نام</a></li>
+													<li><a href="faq.html">سوالات متداول</a></li>
+													<li><a href="404.html">404</a></li>
+												</ul>
+											</li>
+											
+										</ul>
+
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			<!-- =========================== Breadcrumbs =================================== -->
+			<div class="breadcrumbs_wrap dark">
+				<div class="container">
+					<div class="row align-items-center">
+						
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="text-center">
+								<h2 class="breadcrumbs_title">هیچ نتیجه ای یافت نشد</h2>
+								<nav aria-label="breadcrumb">
+								  <ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#"><i class="ti-home"></i></a></li>
+									<li class="breadcrumb-item"><a href="#">فروشگاه</a></li>
+									<li class="breadcrumb-item active" aria-current="page">صفحه خطا</li>
+								  </ol>
+								</nav>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- =========================== Breadcrumbs =================================== -->
+			
+			
+			<!-- =========================== Error Page =================================== -->
+			<section class="gray">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-lg-12 col-md-12 text-center">
+							<h2 class="error_title">4<span class="text-primary">0</span>4<i class="ti-help"></i></h2>
+							<p><span class="text-primary"></span> متأسفیم ، صفحه مورد نظر شما وجود ندارد</p>
+							<a href="index.html" class="btn btn-primary">بازگشت به صفحه اصلی</a>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- =========================== Error Page =================================== -->
+
+			
+			<!-- ============================ Call To Action ================================== --> 
+			<section class="theme-bg call_action_wrap-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							
+							<div class="call_action_wrap">
+								<div class="call_action_wrap-head">
+									<h3>اشتراک در خبر نامه</h3>
+									<span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</span>
+								</div>
+								<div class="newsletter_box">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="ایمیل خود را وارد کنید">
+										<div class="input-group-append">
+										<button class="btn search_btn" type="button"><i class="fas fa-arrow-alt-circle-left"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Call To Action End ================================== -->
+			
+			<!-- ============================ Footer Start ================================== -->
+			<footer class="dark-footer skin-dark-footer style-2">
+				<div class="before-footer">
+					<div class="container">
+						<div class="row">
+					
+							<div class="col-lg-4 col-md-4">
+								<div class="single_facts">
+									<div class="facts_icon">
+										<i class="ti-shopping-cart"></i>
+									</div>
+									<div class="facts_caption">
+										<h4>ارسال رایگان</h4>
+										<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-4 col-md-4">
+								<div class="single_facts">
+									<div class="facts_icon">
+										<i class="ti-money"></i>
+									</div>
+									<div class="facts_caption">
+										<h4>تضمین بازگشت هزینه</h4>
+										<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-4 col-md-4">
+								<div class="single_facts last">
+									<div class="facts_icon">
+										<i class="ti-headphone-alt"></i>
+									</div>
+									<div class="facts_caption">
+										<h4>پشتیبانی آنلاین 24 ساعته</h4>
+										<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-lg-4 col-md-4">
+								<div class="footer_widget">
+									<h4 class="extream">تماس با ما</h4>
+									<p>لورم ایپسوم متن <a href="#" class="theme-cl">دریافت کنید</a></p>
+									
+									<div class="address_infos">
+										<ul>
+											<li><i class="ti-home theme-cl"></i>ایران ، تهران ، زعفرانیه ، خیابان هستی ،<br> ساختمان مهر پلاک  856</li>
+											<li><i class="ti-headphone-alt theme-cl"></i>02112345678</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+									
+							<div class="col-lg-2 col-md-2">
+								<div class="footer_widget">
+									<h4 class="widget_title">دسته بندی ها</h4>
+									<ul class="footer-menu">
+										<li><a href="#">ارگانیک</a></li>
+										<li><a href="#">مواد غذایی</a></li>
+										<li><a href="#">دیجیتالی</a></li>
+										<li><a href="#">مبلمان</a></li>
+									</ul>
+								</div>
+							</div>
+									
+							<div class="col-lg-2 col-md-2">
+								<div class="footer_widget">
+									<h4 class="widget_title">کارخانه ی ما</h4>
+									<ul class="footer-menu">
+										<li><a href="#">درباره ما</a></li>
+										<li><a href="#">شرکت ما</a></li>
+										<li><a href="#">استودیوی ما</a></li>
+										<li><a href="#">فروشگاه</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="col-lg-2 col-md-2">
+								<div class="footer_widget">
+									<h4 class="widget_title">آخرین خبرها</h4>
+									<ul class="footer-menu">
+										<li><a href="#">پیشنهادات ویژه</a></li>
+										<li><a href="#">حساب من</a></li>
+										<li><a href="#">محصولات من</a></li>
+										<li><a href="#">موارد دلخواه</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="col-lg-2 col-md-2">
+								<div class="footer_widget">
+									<h4 class="widget_title">پشتیبانی مشتری</h4>
+									<ul class="footer-menu">
+										<li><a href="#">شرایط</a></li>
+										<li><a href="#">حریم خصوصی</a></li>
+										<li><a href="#">وبلاگ</a></li>
+										<li><a href="#">سوالات متداول</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row align-items-center">
+							
+							<div class="col-lg-6 col-md-8">
+								<p class="mb-0">© کپی رایت 2020 اودکس. راستچین شده توسط <a href="https://www.rtl-theme.com/author/davod_taheri/">داود</a>.</p>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 text-left">
+								<ul class="footer_social_links">
+									<li><a href="#"><i class="ti-facebook"></i></a></li>
+									<li><a href="#"><i class="ti-twitter"></i></a></li>
+									<li><a href="#"><i class="ti-instagram"></i></a></li>
+									<li><a href="#"><i class="ti-linkedin"></i></a></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ============================ Footer End ================================== -->
+			
+			<!-- cart -->
+			<!-- Switcher Start -->
+			<div class="w3-ch-sideBar w3-bar-block w3-card-2 w3-animate-right" style="display:none;left:0;" id="rightMenu">
+				<div class="rightMenu-scroll">
+					<h4 class="cart_heading">سبد خرید شما</h4>
+					<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large"><i class="ti-close"></i></button>
+					<div class="right-ch-sideBar" id="side-scroll">
+						
+						<div class="cart_select_items">
+							<!-- Single Item -->
+							<div class="cart_selected_single">
+								<div class="cart_selected_single_thumb">
+									<a href="#"><img src="assets/img/product.jpg" class="img-fluid" alt="" /></a>
+								</div>
+								<div class="cart_selected_single_caption">
+									<h4 class="product_title">قورباغه‌ات را قورت بده</h4>
+									<span class="numberof_item">25000 تومان</span>
+									<a href="#" class="text-danger">حذف</a>
+								</div>
+							</div>
+							<!-- Single Item -->
+							<div class="cart_selected_single">
+								<div class="cart_selected_single_thumb">
+									<a href="#"><img src="assets/img/product.jpg" class="img-fluid" alt="" /></a>
+								</div>
+								<div class="cart_selected_single_caption">
+									<h4 class="product_title">قورباغه‌ات را قورت بده</h4>
+									<span class="numberof_item">25000 تومان</span>
+									<a href="#" class="text-danger">حذف</a>
+								</div>
+							</div>
+							<!-- Single Item -->
+							<div class="cart_selected_single">
+								<div class="cart_selected_single_thumb">
+									<a href="#"><img src="assets/img/product.jpg" class="img-fluid" alt="" /></a>
+								</div>
+								<div class="cart_selected_single_caption">
+									<h4 class="product_title">قورباغه‌ات را قورت بده</h4>
+									<span class="numberof_item">25000 تومان</span>
+									<a href="#" class="text-danger">حذف</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="cart_subtotal">
+							<h6>جمع کل<span class="theme-cl">75000 تومان</span></h6>
+						</div>
+						
+						<div class="cart_action">
+							<ul>
+								<li><a href="#" class="btn btn-go-cart btn-theme">مشاهده / ویرایش سبد خرید</a></li>
+								<li><a href="#" class="btn btn-checkout">اکنون پرداخت کنید</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- cart -->
+
+			<!-- Left Collapse navigation -->
+			<div class="w3-ch-sideBar-left w3-bar-block w3-card-2 w3-animate-right"  style="display:none;left:0;" id="leftMenu">
+				<div class="rightMenu-scroll">
+					<div class="flixel">
+						<h4 class="cart_heading">دسته بندی</h4>
+						<button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large"><i class="ti-close"></i></button>
+					</div>
+					
+					<div class="right-ch-sideBar">
+						
+						<div class="side_navigation_collapse">
+							<div class="d-navigation">
+								<ul id="side-menu">
+									<li class="dropdown">
+										<a href="#">دسته بندی<span class="ti-angle-right"></span></a>
+										<ul class="nav nav-second-level">
+											<li><a href="#">مواد غذایی</a></li>
+											<li><a href="#">ارگانیک</a></li>
+											<li><a href="#">الکترونیک</a></li>
+											<li><a href="#">مد پوشاک</a></li>
+											<li><a href="#">آموزشی</a></li>
+											<li><a href="#">زیبایی</a></li>
+											
+											<li class="dropdown">
+												<a href="#">دیجیتال<span class="ti-angle-right"></span></a>
+												<ul class="nav nav-second-level">
+													<li><a href="#">زیر مجموعه</a></li>
+													<li><a href="#">زیر مجموعه</a></li>
+													<li><a href="#">زیر مجموعه</a></li>
+													<li><a href="#">زیر مجموعه</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									
+									<li class="dropdown">
+										<a href="#">برند<span class="ti-angle-right"></span></a>
+										<ul class="nav nav-second-level">
+											<li><a href="#">نایک</a></li>
+											<li><a href="#">اپل</a></li>
+											<li><a href="#">هکرل</a></li>
+											<li><a href="#">توفان</a></li>
+											<li><a href="#">اوریو</a></li>
+											<li><a href="#">کیتی</a></li>
+										</ul>
+									</li>
+									
+									<li class="dropdown">
+										<a href="#">محصولات<span class="ti-angle-right"></span></a>
+										<ul class="nav nav-second-level">
+											<li><a href="#">محصولات 3 ستون</a></li>
+											<li><a href="#">محصولات 4 ستون</a></li>
+											<li><a href="#">محصولات 5 ستون</a></li>
+											<li><a href="#">محصولات 6 ستون</a></li>
+											<li><a href="#">محصولات 7 ستون</a></li>
+											<li><a href="#">محصولات 8 ستون</a></li>
+										</ul>
+									</li>
+									
+									<li><a href="#">درباره ما</a></li>
+									<li><a href="#">وبلاگ</a></li>
+									<li><a href="#">تماس با ما</a></li>
+									<li><a href="#">خرید اودکس</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- Left Collapse navigation -->
+			
+			<!-- Product View -->
+			<div class="modal fade" id="viewproduct-over" tabindex="-1" role="dialog" aria-labelledby="add-payment" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content" id="view-product">
+						<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+						<div class="modal-body">
+							<div class="row align-items-center">
+					
+						<div class="col-lg-6 col-md-12 col-sm-12">
+								<div class="sp-wrap">
+									<img src="assets/img/detail/detail-1.png" class="img-fluid rounded" alt="">
+								</div>
+							</div>
+							
+							<div class="col-lg-6 col-md-12 col-sm-12">
+								<div class="woo_pr_detail">
+									
+									<div class="woo_cats_wrps">
+										<a href="#" class="woo_pr_cats">پیراهن معمولی</a>
+										<span class="woo_pr_trending">پرطرفدار</span>
+									</div>
+									<h2 class="woo_pr_title">پیراهن راه راه حرفه ای</h2>
+									
+									<div class="woo_pr_reviews">
+										<div class="woo_pr_rating">
+											<i class="fa fa-star filled"></i>
+											<i class="fa fa-star filled"></i>
+											<i class="fa fa-star filled"></i>
+											<i class="fa fa-star filled"></i>
+											<i class="fa fa-star"></i>
+											<span class="woo_ave_rat">4.8</span>
+										</div>
+										<div class="woo_pr_total_reviews">
+											<a href="#">(124 بررسی)</a>
+										</div>
+									</div>
+									
+									<div class="woo_pr_price">
+										<div class="woo_pr_offer_price">
+											<h3>149 تومان<span class="org_price">199 تومان</span></h3>
+										</div>
+									</div>
+									
+									<div class="woo_pr_short_desc">
+										<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+									</div>
+									
+									<div class="woo_pr_color flex_inline_center mb-3">
+										<div class="woo_pr_varient">
+											<h6>سایز:</h6>
+										</div>
+										<div class="woo_colors_list pr-3">
+											<div class="custom-varient custom-size">
+												<input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioOne" value="5" data-toggle="form-caption" data-target="#sizeCaption">
+												<label class="custom-control-label" for="sizeRadioOne">SM</label>
+											</div>
+											<div class="custom-varient custom-size">
+												<input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTwo" value="6" data-toggle="form-caption" data-target="#sizeCaption">
+												<label class="custom-control-label" for="sizeRadioTwo">M</label>
+											</div>
+											<div class="custom-varient custom-size">
+												<input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioThree" value="6.6" data-toggle="form-caption" data-target="#sizeCaption">
+												<label class="custom-control-label" for="sizeRadioThree">L</label>
+											</div>
+											<div class="custom-varient custom-size">
+												<input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFour" value="7" data-toggle="form-caption" data-target="#sizeCaption" checked>
+												<label class="custom-control-label" for="sizeRadioFour">XL</label>
+											</div>
+										</div>
+									</div>
+									
+									<div class="woo_pr_color flex_inline_center mb-3">
+										<div class="woo_pr_varient">
+											<h6>رنگ:</h6>
+										</div>
+										<div class="woo_colors_list pr-3">
+											<div class="custom-varient custom-color red">
+												<input type="radio" class="custom-control-input" name="colorRadio" id="red" value="5" data-toggle="form-caption" data-target="#colorCaption">
+												<label class="custom-control-label" for="red">5</label>
+											</div>
+											<div class="custom-varient custom-color green">
+												<input type="radio" class="custom-control-input" name="colorRadio" id="green" value="6" data-toggle="form-caption" data-target="#colorCaption">
+												<label class="custom-control-label" for="green">6</label>
+											</div>
+											<div class="custom-varient custom-color purple">
+												<input type="radio" class="custom-control-input" name="colorRadio" id="purple" value="6.6" data-toggle="form-caption" data-target="#colorCaption" checked>
+												<label class="custom-control-label" for="purple">6.5</label>
+											</div>
+											<div class="custom-varient custom-color yellow">
+												<input type="radio" class="custom-control-input" name="colorRadio" id="yellow" value="7" data-toggle="form-caption" data-target="#colorCaption">
+												<label class="custom-control-label" for="yellow">7</label>
+											</div>
+											<div class="custom-varient custom-color blue">
+												<input type="radio" class="custom-control-input" name="colorRadio" id="blue" value="6" data-toggle="form-caption" data-target="#colorCaption">
+												<label class="custom-control-label" for="blue">7.5</label>
+											</div>
+										</div>
+									</div>
+									
+									<div class="woo_btn_action">
+										<div class="col-12 col-lg-auto">
+											<input type="number" class="form-control mb-2 full-width" value="1" />
+										</div>
+									</div>
+									
+									<div class="woo_btn_action">
+										<div class="col-12 col-lg-auto">
+											<button type="submit" class="btn btn-block btn-dark mb-2">افزودن به سبد خرید <i class="ti-shopping-cart-full mr-2"></i></button>
+										</div>
+										<div class="col-12 col-lg-auto">
+											<button class="btn btn-gray btn-block mb-2" data-toggle="button">مورد علاقه <i class="ti-heart mr-2"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/metisMenu.min.js"></script>
+		<script src="assets/js/owl-carousel.js"></script>
+		<script src="assets/js/ion.rangeSlider.min.js"></script>
+		<script src="assets/js/smoothproducts.js"></script>
+		<script src="assets/js/jquery-rating.js"></script>
+		<script src="assets/js/jQuery.style.switcher.js"></script>
+		<script src="assets/js/custom.js"></script>
+		
+		<script>
+			function openRightMenu() {
+				document.getElementById("rightMenu").style.display = "block";
+			}
+			function closeRightMenu() {
+				document.getElementById("rightMenu").style.display = "none";
+			}
+		</script>
+		
+		<script>
+			function openLeftMenu() {
+				document.getElementById("leftMenu").style.display = "block";
+			}
+			function closeLeftMenu() {
+				document.getElementById("leftMenu").style.display = "none";
+			}
+		</script>
+
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+
+	</body>
+
+</html>
