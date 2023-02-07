@@ -44,13 +44,13 @@
 									<div class="offer_item">
 										<div class="offer_item_thumb">
 											<div class="offer-overlay"></div>
-											<img src="{{asset('assets/img/brand-1.jpg')}}" alt="">
+											<img src="{{asset('assets/img/brand-3.jpg')}}" alt="">
 										</div>
 										<div class="offer_caption">
 											<div class="offer_bottom_caption">
-												<p>  </p>
-												<div class="offer_title">  </div>
-												<span>  </span>
+												<p> بی رقیب </p>
+												<div class="offer_title"> پیشنهادات خوب در شهر شما </div>
+												<span> بدون واسطه خرید کنید </span>
 											</div>
 											<a href="#" class="btn offer_box_btn">خرید کنید</a>
 										</div>
@@ -61,35 +61,22 @@
 									<div class="offer_item">
 										<div class="offer_item_thumb">
 											<div class="offer-overlay"></div>
-											<img src="{{asset('assets/img/brand-1.jpg')}}" alt="">
+											<img src="{{asset('assets/img/brand-2.jpg')}}" alt="">
 										</div>
 										<div class="offer_caption">
 											<div class="offer_bottom_caption">
-												<p>  </p>
-												<div class="offer_title">  </div>
-												<span>  </span>
+												<p> گلستان </p>
+												<div class="offer_title"> پیشنهادات خوب در شهر شما </div>
+												<span> بدون واسطه خرید کنید </span>
 											</div>
 											<a href="#" class="btn offer_box_btn">خرید کنید</a>
 										</div>
 									</div>
 								</div>
 								<!-- Single Item -->
-								<div class="item">
-									<div class="offer_item">
-										<div class="offer_item_thumb">
-											<div class="offer-overlay"></div>
-											<img src="{{asset('assets/img/brand-1.jpg')}}" alt="">
-										</div>
-										<div class="offer_caption">
-											<div class="offer_bottom_caption">
-												<p>  </p>
-												<div class="offer_title">  </div>
-												<span>  </span>
-											</div>
-											<a href="#" class="btn offer_box_btn">خرید کنید</a>
-										</div>
-									</div>
-								</div>>
+								
+
+
 								<!-- Single Item -->
 							</div>
 						</div>
